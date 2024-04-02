@@ -1,5 +1,5 @@
 <?php
-
+/*
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +24,7 @@ Route::get('/categorias/{id}', 'CategoriaController@show');
 Route::put('/categorias/{id}', 'CategoriaController@update');
 Route::delete('/categorias/{id}', 'CategoriaController@destroy');
 
+
 // Rutas para imagen
 Route::get('/imagenes-producto', 'ImagenProductoController@index');
 Route::post('/imagenes-producto', 'ImagenProductoController@store');
@@ -34,3 +35,4 @@ Route::delete('/imagenes-producto/{id}', 'ImagenProductoController@destroy');
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+*/

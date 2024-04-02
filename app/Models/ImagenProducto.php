@@ -9,8 +9,12 @@ class ImagenProducto extends Model
 {
     use HasFactory;
 
-    public function productos()
+    protected $fillable = [
+        'url_imagen'
+    ];
+
+    public function producto()
     {
-        return $this->hasMany(Producto::class, 'id_imagen', 'id');
+        return $this->belongsTo(Producto::class, 'id_imagen', 'id');
     }
 }
